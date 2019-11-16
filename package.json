@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "description": "Component that performs fullscreen in DOM Elements",
   "repository": "https://github.com/andrelmlins/svelte-fullscreen",
-  "author": "André Lins",
+  "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
   "license": "MIT",
   "private": false,
   "module": "dist/index.mjs",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "rollup": "^1.27.0",
     "rollup-plugin-node-resolve": "^5.2.0",
@@ -18,5 +21,8 @@
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build"
+  },
+  "bugs": {
+    "url": "https://github.com/andrelmlins/react-shadow-scroll/issues"
   }
 }
