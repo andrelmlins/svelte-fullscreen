@@ -27,5 +27,9 @@
   },
   "bugs": {
     "url": "https://github.com/andrelmlins/svelte-fullscreen/issues"
-  }
+  },
+  "keywords": [
+    "svelte",
+    "fullscreen"
+  ]
 }
