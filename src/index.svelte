@@ -3,15 +3,15 @@
 
   let component;
   const onToggle = () => {
-    screenfull.toggle(component);
+    screenfull.toggle(component.childNodes[0]);
   };
 
   const onRequest = () => {
-    screenfull.request(component);
+    screenfull.request(component.childNodes[0]);
   };
 
   const onExit = () => {
-    screenfull.exit(component);
+    screenfull.exit(component.childNodes[0]);
   };
 </script>
 

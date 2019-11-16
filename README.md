@@ -37,10 +37,10 @@ yarn install && yarn start
   }
 </style>
 
-<SvelteFullscreen let:request let:exit>
+<SvelteFullscreen let:onRequest let:onExit>
   <div>
-    <button onClick={() => onRequest()}>FullScreen</button>
-    <button onClick={() => onExit()}>Screen</button>
+    <button on:click={() => onRequest()}>FullScreen</button>
+    <button on:click={() => onExit()}>Screen</button>
   </div>
 </SvelteFullscreen>
 ```
