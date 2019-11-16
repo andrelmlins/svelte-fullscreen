@@ -1,0 +1,22 @@
+{
+  "name": "svelte-fullscreen",
+  "version": "0.1.0",
+  "description": "Component that performs fullscreen in DOM Elements",
+  "repository": "https://github.com/andrelmlins/svelte-fullscreen",
+  "author": "André Lins",
+  "license": "MIT",
+  "private": false,
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "dependencies": {
+    "rollup": "^1.27.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^5.1.1",
+    "screenfull": "^5.0.0",
+    "svelte": "^3.14.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  }
+}
