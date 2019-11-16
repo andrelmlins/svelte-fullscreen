@@ -15,8 +15,8 @@ jobs:
       script: yarn build
       deploy:
         provider: npm
-        email: "$EMAIL_ADDRESS"
-        api_key: "$AUTH_TOKEN"
+        email: $EMAIL_ADDRESS
+        api_key: $AUTH_TOKEN
         skip_cleanup: true
         on:
           tags: true
