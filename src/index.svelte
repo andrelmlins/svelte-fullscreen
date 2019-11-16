@@ -2,15 +2,19 @@
   import screenfull from "screenfull";
 
   let component;
-  const toggle = () => {
+  const onToggle = () => {
     screenfull.toggle(component);
   };
 
-  const request = () => {
+  const onRequest = () => {
     screenfull.request(component);
+  };
+
+  const onExit = () => {
+    screenfull.exit(component);
   };
 </script>
 
 <div bind:this={component}>
-  <slot {toggle} {request} />
+  <slot {onToggle} {onRequest} {onExit} />
 </div>

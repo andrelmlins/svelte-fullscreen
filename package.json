@@ -1,6 +1,6 @@
 {
   "name": "svelte-fullscreen",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Component that performs fullscreen in DOM Elements",
   "repository": "https://github.com/andrelmlins/svelte-fullscreen",
   "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
