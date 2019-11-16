@@ -5,11 +5,11 @@
   "repository": "https://github.com/andrelmlins/svelte-fullscreen",
   "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
   "license": "MIT",
-  "private": false,
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "dependencies": {
     "screenfull": "^5.0.0"
@@ -26,6 +26,6 @@
     "prepublishOnly": "npm run build"
   },
   "bugs": {
-    "url": "https://github.com/andrelmlins/react-shadow-scroll/issues"
+    "url": "https://github.com/andrelmlins/svelte-fullscreen/issues"
   }
 }
