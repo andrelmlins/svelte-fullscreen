@@ -7,6 +7,7 @@
   "license": "MIT",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
+  "homepage": "https://svelte-fullscreen.netlify.com/",
   "files": [
     "dist",
     "README.md"
