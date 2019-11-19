@@ -49,10 +49,10 @@ yarn install && yarn start
 
 Raw component props (before transform):
 
-| Prop     | Type | Description    |
-| -------- | ---- | -------------- |
-| onChange | func | Call in change |
-| onError  | func | Call in error  |
+| Prop   | Type | Description    |
+| ------ | ---- | -------------- |
+| change | func | Call in change |
+| error  | func | Call in error  |
 
 ## Slot Properties
 

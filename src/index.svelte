@@ -3,10 +3,11 @@
   import screenfull from "screenfull";
 
   let component;
+  const dispatch = createEventDispatcher();
 
   onMount(() => {
-    screenfull.on("change", () => dispatch("onChange"));
-    screenfull.on("error", () => dispatch("onError"));
+    screenfull.on("change", () => dispatch("change"));
+    screenfull.on("error", () => dispatch("error"));
   });
 
   const onToggle = () => {
