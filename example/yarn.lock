@@ -1458,10 +1458,10 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-svelte-fullscreen@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/svelte-fullscreen/-/svelte-fullscreen-0.2.2.tgz#91b3b569742ee615329fd3ba54b831b37c46bef3"
-  integrity sha512-FvjaOllwkDpSERrrda0iy8avAJC7Mli3dHrxKeUvirm7hIvDgesqqJJMg9MijCle8x+PbCP/FC5FWEzdgYgZBg==
+svelte-fullscreen@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/svelte-fullscreen/-/svelte-fullscreen-0.3.0.tgz#189c8f2e0e29490dd6bd6bdf33840bccddf12d32"
+  integrity sha512-N6wuEmlp0hCfXnZvb2iF3AKDf/KsvGuv5gJzY6Ak30NfUCOOmwz52okG3Pm1q6DoomLdsxlDRLQSs0cld2Bh1A==
   dependencies:
     screenfull "^5.0.0"
 

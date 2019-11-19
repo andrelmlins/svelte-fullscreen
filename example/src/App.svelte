@@ -51,7 +51,7 @@
     </div>
   </SvelteFullscreen>
 
-  <SvelteFullscreen let:onToggle>
+  <SvelteFullscreen let:onToggle on:change={() => console.log('change')}>
     <button class="buttonImage" on:click={() => onToggle()}>
       <img
         alt="Fullscreen"
