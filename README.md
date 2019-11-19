@@ -45,6 +45,15 @@ yarn install && yarn start
 </SvelteFullscreen>
 ```
 
+## Properties
+
+Raw component props (before transform):
+
+| Prop     | Type | Description    |
+| -------- | ---- | -------------- |
+| onChange | func | Call in change |
+| onError  | func | Call in error  |
+
 ## Slot Properties
 
 Raw component props (before transform):
