@@ -16,11 +16,11 @@
     "screenfull": "^5.0.0"
   },
   "devDependencies": {
-    "rollup": "^1.27.0",
+    "rollup": "^1.27.13",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^5.1.1",
-    "svelte": "^3.14.1"
+    "svelte": "^3.16.5"
   },
   "scripts": {
     "build": "rollup -c",
