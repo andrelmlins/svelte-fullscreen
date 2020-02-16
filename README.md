@@ -18,7 +18,7 @@ Local demo:
 
 ```
 git clone https://github.com/andrelmlins/svelte-fullscreen.git
-cd svelte-fullscreen/example
+cd svelte-fullscreen
 yarn install && yarn start
 ```
 
