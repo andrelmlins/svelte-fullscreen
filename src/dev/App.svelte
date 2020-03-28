@@ -1,5 +1,5 @@
 <script>
-  import Fullscreen from "../lib/index.svelte";
+  import Fullscreen from "../lib/Fullscreen.svelte";
 </script>
 
 <style>
