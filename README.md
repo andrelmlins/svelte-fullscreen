@@ -12,6 +12,8 @@ npm i svelte-fullscreen
 yarn add svelte-fullscreen
 ```
 
+<em>Note: to use this library in sapper, install as devDependency. See the [link](https://github.com/sveltejs/sapper-template#using-external-components).</em>
+
 ## Demo [Link](https://svelte-fullscreen.netlify.com/)
 
 Local demo:
@@ -24,9 +26,11 @@ yarn install && yarn start
 
 ## Examples
 
+An example of how to use the library:
+
 ```js
 <script>
-  import SvelteFullscreen from "svelte-fullscreen";
+  import Fullscreen from "svelte-fullscreen";
 </script>
 
 <style>
@@ -37,12 +41,12 @@ yarn install && yarn start
   }
 </style>
 
-<SvelteFullscreen let:onRequest let:onExit>
+<Fullscreen let:onRequest let:onExit>
   <div>
     <button on:click={() => onRequest()}>FullScreen</button>
     <button on:click={() => onExit()}>Screen</button>
   </div>
-</SvelteFullscreen>
+</Fullscreen>
 ```
 
 ## Properties

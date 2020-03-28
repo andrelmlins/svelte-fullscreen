@@ -5,10 +5,12 @@
   "repository": "https://github.com/andrelmlins/svelte-fullscreen",
   "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
   "license": "MIT",
+  "svelte": "src/lib/Fullscreen.svelte",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "homepage": "https://svelte-fullscreen.netlify.com/",
   "files": [
+    "src/lib/Fullscreen.svelte",
     "dist",
     "README.md"
   ],

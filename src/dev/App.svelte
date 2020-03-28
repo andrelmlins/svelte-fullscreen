@@ -1,5 +1,5 @@
 <script>
-  import SvelteFullscreen from "../lib/index.svelte";
+  import Fullscreen from "../lib/index.svelte";
 </script>
 
 <style>
@@ -44,18 +44,18 @@
 
 <main>
   <h1>Svelte Fullscreen</h1>
-  <SvelteFullscreen let:onRequest let:onExit>
+  <Fullscreen let:onRequest let:onExit>
     <div>
       <button on:click={() => onRequest()}>FullScreen</button>
       <button on:click={() => onExit()}>Screen</button>
     </div>
-  </SvelteFullscreen>
+  </Fullscreen>
 
-  <SvelteFullscreen let:onToggle on:change={() => console.log('change')}>
+  <Fullscreen let:onToggle on:change={() => console.log('change')}>
     <button class="buttonImage" on:click={() => onToggle()}>
       <img
         alt="Fullscreen"
         src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2" />
     </button>
-  </SvelteFullscreen>
+  </Fullscreen>
 </main>

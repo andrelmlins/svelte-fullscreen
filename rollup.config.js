@@ -38,12 +38,12 @@ export default [
     }
   },
   {
-    input: "src/lib/index.svelte",
-    output: { file: pkg.main, format: "umd", name: "FullScreen" },
+    input: "src/lib/Fullscreen.svelte",
+    output: { file: pkg.main, format: "umd", name: "Fullscreen" },
     plugins: [svelte(), resolve(), commonjs()]
   },
   {
-    input: "src/lib/index.svelte",
+    input: "src/lib/Fullscreen.svelte",
     output: { file: pkg.module, format: "es" },
     external: ["svelte/internal"],
     plugins: [svelte(), commonjs()]
