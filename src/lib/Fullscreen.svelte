@@ -11,15 +11,15 @@
   });
 
   const onToggle = () => {
-    screenfull.toggle(component.childNodes[0]);
+    screenfull.toggle(component.nextElementSibling);
   };
 
   const onRequest = () => {
-    screenfull.request(component.childNodes[0]);
+    screenfull.request(component.nextElementSibling);
   };
 
   const onExit = () => {
-    screenfull.exit(component.childNodes[0]);
+    screenfull.exit(component.nextElementSibling);
   };
 
   onDestroy(() => {
@@ -28,6 +28,5 @@
   });
 </script>
 
-<div bind:this={component}>
-  <slot {onToggle} {onRequest} {onExit} />
-</div>
+<div style="width:0; height:0" bind:this={component} />
+<slot {onToggle} {onRequest} {onExit} />

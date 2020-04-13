@@ -58,15 +58,19 @@
     background-color: #f9a825;
   }
 
-  img {
+  .image {
+    background-image: url("https://spguia.melhoresdestinos.com.br/system/fotos_local/fotos/26013/show/praia-do-aventureiro.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 </style>
 
 <main>
   <h1>Svelte Fullscreen</h1>
   <h4>Component that performs fullscreen in DOM Elements</h4>
+  <br />
   <div class="root">
     <div class="card">
       <Fullscreen let:onRequest let:onExit>
@@ -77,11 +81,8 @@
       </Fullscreen>
     </div>
     <div class="card">
-      <Fullscreen let:onToggle on:change={() => console.log('change')}>
-        <img
-          on:click={() => onToggle()}
-          alt="Fullscreen"
-          src="https://spguia.melhoresdestinos.com.br/system/fotos_local/fotos/26013/show/praia-do-aventureiro.jpg" />
+      <Fullscreen let:onToggle>
+        <div class="image" on:click={() => onToggle()} />
       </Fullscreen>
     </div>
   </div>
