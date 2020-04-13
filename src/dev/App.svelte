@@ -10,17 +10,13 @@
     justify-content: center;
     width: 100%;
     min-height: 100%;
+    padding: 16px;
+    box-sizing: border-box;
   }
 
   h1 {
-    color: #1f2041;
-    text-transform: uppercase;
     margin-bottom: 0px;
-  }
-
-  img {
-    cursor: pointer;
-    width: 50%;
+    text-align: center;
   }
 
   .root {
@@ -37,10 +33,7 @@
     min-width: 40%;
     max-width: 40%;
     background-color: white;
-    box-sizing: border-box;
-    min-height: 400px;
-    max-height: 400px;
-    overflow-x: scroll;
+    height: 400px;
     padding: 16px;
     box-sizing: border-box;
     margin-right: 40px;
@@ -64,6 +57,27 @@
     background-position: center;
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  @media screen and (max-width: 800px) {
+    .root {
+      flex-direction: column;
+    }
+
+    .card {
+      max-width: 100%;
+      margin-right: 0px;
+      margin-bottom: 16px;
+    }
   }
 </style>
 
@@ -82,7 +96,9 @@
     </div>
     <div class="card">
       <Fullscreen let:onToggle>
-        <div class="image" on:click={() => onToggle()} />
+        <div class="image" on:click={() => onToggle()}>
+          <h1>Click Here</h1>
+        </div>
       </Fullscreen>
     </div>
   </div>
