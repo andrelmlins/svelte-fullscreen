@@ -1,6 +1,29 @@
-<script>
+<script lang="ts">
   import Fullscreen from "../lib/Fullscreen.svelte";
 </script>
+
+<main>
+  <h1>Svelte Fullscreen</h1>
+  <h4>Component that performs fullscreen in DOM Elements</h4>
+  <br />
+  <div class="root">
+    <div class="card">
+      <Fullscreen let:onRequest let:onExit>
+        <div class="container-fullscreen">
+          <button on:click={() => onRequest()}>FullScreen</button>
+          <button on:click={() => onExit()}>Screen</button>
+        </div>
+      </Fullscreen>
+    </div>
+    <div class="card">
+      <Fullscreen let:onToggle>
+        <div class="image" on:click={() => onToggle()}>
+          <h1>Click Here</h1>
+        </div>
+      </Fullscreen>
+    </div>
+  </div>
+</main>
 
 <style>
   main {
@@ -80,26 +103,3 @@
     }
   }
 </style>
-
-<main>
-  <h1>Svelte Fullscreen</h1>
-  <h4>Component that performs fullscreen in DOM Elements</h4>
-  <br />
-  <div class="root">
-    <div class="card">
-      <Fullscreen let:onRequest let:onExit>
-        <div class="container-fullscreen">
-          <button on:click={() => onRequest()}>FullScreen</button>
-          <button on:click={() => onExit()}>Screen</button>
-        </div>
-      </Fullscreen>
-    </div>
-    <div class="card">
-      <Fullscreen let:onToggle>
-        <div class="image" on:click={() => onToggle()}>
-          <h1>Click Here</h1>
-        </div>
-      </Fullscreen>
-    </div>
-  </div>
-</main>

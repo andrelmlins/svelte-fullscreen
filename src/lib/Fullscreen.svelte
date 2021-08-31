@@ -1,30 +1,40 @@
-<script>
+<script lang="ts">
   import { onMount, onDestroy, createEventDispatcher } from "svelte";
   import screenfull from "screenfull";
 
-  let component;
-  const dispatch = createEventDispatcher();
+  let component: HTMLElement;
+  const dispatch = createEventDispatcher<{ change: never; error: never }>();
 
   onMount(() => {
-    screenfull.on("change", () => dispatch("change"));
-    screenfull.on("error", () => dispatch("error"));
+    if (screenfull.isEnabled) {
+      screenfull.on("change", () => dispatch("change"));
+      screenfull.on("error", () => dispatch("error"));
+    }
   });
 
   const onToggle = () => {
-    screenfull.toggle(component.nextElementSibling);
+    if (screenfull.isEnabled && component?.nextElementSibling) {
+      screenfull.toggle(component.nextElementSibling);
+    }
   };
 
   const onRequest = () => {
-    screenfull.request(component.nextElementSibling);
+    if (screenfull.isEnabled && component?.nextElementSibling) {
+      screenfull.request(component.nextElementSibling);
+    }
   };
 
   const onExit = () => {
-    screenfull.exit(component.nextElementSibling);
+    if (screenfull.isEnabled && component?.nextElementSibling) {
+      screenfull.exit();
+    }
   };
 
   onDestroy(() => {
-    screenfull.off("change", null);
-    screenfull.off("error", null);
+    if (screenfull.isEnabled) {
+      screenfull.off("change", () => true);
+      screenfull.off("error", () => true);
+    }
   });
 </script>
 
