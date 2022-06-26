@@ -1,6 +1,6 @@
 # Svelte FullScreen
 
-[![npm version](https://badge.fury.io/js/svelte-fullscreen.svg)](https://www.npmjs.com/package/svelte-fullscreen) &bull; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/svelte-fullscreen/blob/master/LICENSE) &bull; [![Build Status](https://travis-ci.com/andrelmlins/svelte-fullscreen.svg?branch=master)](https://travis-ci.com/andrelmlins/svelte-fullscreen) &bull; [![Netlify Status](https://api.netlify.com/api/v1/badges/30d7b769-4f7a-40db-9575-032fca47b888/deploy-status)](https://app.netlify.com/sites/svelte-fullscreen/deploys) &bull; [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/andrelmlins/svelte-fullscreen.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/andrelmlins/svelte-fullscreen/context:javascript)
+[![npm version](https://badge.fury.io/js/svelte-fullscreen.svg)](https://www.npmjs.com/package/svelte-fullscreen) &bull; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/svelte-fullscreen/blob/master/LICENSE) &bull; [![Node.js CI](https://github.com/andrelmlins/svelte-fullscreen/actions/workflows/nodejs.yml/badge.svg)](https://github.com/andrelmlins/svelte-fullscreen/actions/workflows/nodejs.yml) &bull; [![Netlify Status](https://api.netlify.com/api/v1/badges/30d7b769-4f7a-40db-9575-032fca47b888/deploy-status)](https://app.netlify.com/sites/svelte-fullscreen/deploys) &bull; [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/andrelmlins/svelte-fullscreen.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/andrelmlins/svelte-fullscreen/context:javascript)
 
 Component that performs fullscreen in DOM Elements
 
@@ -68,11 +68,11 @@ Raw component props (before transform):
 | onExit    | func | Call for fullscreen exit   |
 | onRequest | func | Call for fullscreen enter  |
 
-## NPM Statistics
+## Browsers Support
 
-Download stats for this NPM package
+You can see the list of supported browsers [here](https://caniuse.com/fullscreen)
 
-[![NPM](https://nodei.co/npm/svelte-fullscreen.png)](https://nodei.co/npm/svelte-fullscreen/)
+![Browsers support](assets/browser-support.png)
 
 ## License
 
