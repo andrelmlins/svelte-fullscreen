@@ -28,7 +28,7 @@ yarn install && yarn start
 
 An example of how to use the library:
 
-```js
+```svelte
 <script>
   import Fullscreen from "svelte-fullscreen";
 </script>
